@@ -1,1 +1,15 @@
 # PCS_in_Python
+
+The functions in this repository implement a parallel constraint satisfaction model of decision-making based on recommendations given by Glockner et al.(2008). 
+
+It is based on gestalten principles which assume that humans integrate conflicting information while making a decision such that a coherent constellation is created with a clear preference towards one decision choice. The core methodology of constraint satisfaction can be succinctly represented by a compact mathematical equation proposed by Hopfield (1982, 1984).
+
+Such parallel constraint satisfaction (PCS) network models have been successfully used in the explanation of letter and word perception (McClelland & Rumelhart, 1981), social perception (Read & Miller, 1998), analogical mapping (Holyoak & Thagard, 1989), the evaluation of explanations (Thagard, 1989), dissonance reduction (Shultz & Lepper, 1996), impression formation (Kunda & Thagard, 1996), the selection of plans (Thagard & Millgram, 1995), legal decision making (Holyoak & Simon, 1999; Simon, 2004), preferential choice (Simon et al., 2004) and probabilistic decisions (Glöckner, 2006; Glöckner, 2007; Glöckner & Betsch, 2007).
+
+A specialised parallel constraint satisfaction (PCS) network model has been developed for the purpose of handling probabilistic choice problems, which require making judgments based on probability signals(Glöckner et al., 2014). The PCS model proposes that decision issues involving probability can be represented using a simple network structure. Both cues and options are represented as nodes within the network, and their logical relationships are illustrated by inhibitory or excitatory connections between these nodes. All links are reciprocal, indicating that stimuli can either promote or inhibit alternatives, and vice versa. The weights assigned to the nodes show the strength of their association, with values ranging from -1.0 to 1.0.
+
+The general validity node initiates the activation of the network and sustains a consistent activation level of 1. A recursive updating function is employed to model the propagation of activation in the network, with the goal of optimising consistency while complying with the specified constraints. The sigmoid activation function is used to simulate the spreading activation process in the network, with the goal of achieving maximum consistency. After a certain number of iterations, the network reaches a balanced state where activations no longer change (McClelland & Rumelhart, 1981).
+
+At the end, the car node with the highest activation level is deemed to be the car of choice. The cue nodes reach an activation level which reflect their supposed significance in the decision process. 
+
+For implenting the model, the results() function has to be invoked. The datasets D1-D8 have to be uploaded as executable csv files with the same name as mentioned in the repository. The datasets should be stripped of their first row and first column such that they can be accepted as it is as numpy array in the program. 
