@@ -1,5 +1,6 @@
 This folder cantains the executable python code required to implement a parallel constraint satisfaction model of decision making.
-All the functions are enlisted in the code file itself.
+All the functions are enlisted in the code file itself. The user has to implement the result() function to get the model running 
+and obtain the desired results.
 
 The functions along with their role can be understood as:
 
