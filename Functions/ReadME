@@ -1,0 +1,21 @@
+This folder cantains the executable python code required to implement a parallel constraint satisfaction model of decision making.
+All the functions are enlisted in the code file itself. The user has to implement the result() function to get the model running 
+and obtain the desired results.
+
+The functions along with their role can be understood as:
+
+matrix_manipulation: Works on the dataset and transforms it into an interconnection matrix which can be computed upon using the PCS model.​
+​
+pcs_convergence_mccand_r: Determines whether a network has converged by examining energy changes across iterations. Convergence is achieved when energy changes remain below a threshold for a sufficient number of consecutive iterations.​
+​
+pcs_iterate: Calculates a new state given an interconnection matrix and previous state.​
+​
+pcs_energy: Calculates the energy present in the model given current state.​
+​
+pcs_reset:  Resets specified nodes to their fixed activation values.​
+​
+pcs_run: Simulates the run of a PCS model.​
+​
+pcs_run_from_interconnections: Simulates PCS model using only interconnection matrix with default parameters.​
+​
+results: Passes the dataset to be transformed and then be run through the PCS model. Finds the results and plots them.
