@@ -1,1 +1,2 @@
-This folder cantains the functions required to implement a parallel constraint satisfaction model of decision making coded in python.
+This folder cantains the executable python code required to implement a parallel constraint satisfaction model of decision making.
+All the functions are enlisted in the code file itself.
