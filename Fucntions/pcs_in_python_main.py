@@ -275,9 +275,10 @@ def pcs_run_from_interconnections(
 import numpy as np
 def matrix_manipulation (data):
   #data=np.loadtxt("D1.csv", delimiter=",", dtype=float)
-   """ Check a PCS network for convergence using McClelland and Rumelhart's criterion.
+   """
 
-    This function manipulates the datasets so as to create an in interconnection matrix which can be fed into the PCS Model.
+    This function manipulates the datasets so as to create an in interconnection matrix which can be fed into the PCS Model. It feeds the
+    dataset into the model and returns the final result
 
     Args:
         data: A dataset which describes the car options along with their option cues
@@ -329,6 +330,19 @@ def matrix_manipulation (data):
 import pandas as pd
 import matplotlib.pyplot as plt
 def results ():
+
+    """
+    This is the main function which has to be executed. This runs the model and displays the final result containing the activation level
+    of all the nodes
+
+    Args:
+    None
+
+    Returns:
+    None
+    
+
+    """
   data1=np.loadtxt("D1.csv", delimiter=",", dtype=float)
   data2=np.loadtxt("D2.csv", delimiter=",", dtype=float)
   data3=np.loadtxt("D3.csv", delimiter=",", dtype=float)
