@@ -1,4 +1,4 @@
-This folder cantains the executable python code required to implement a parallel constraint satisfaction model of decision making.
+This folder cantains two executable python code files (.ipynb as well as .py) required to implement a parallel constraint satisfaction model of decision making.
 All the functions are enlisted in the code file itself. The user has to implement the result() function to get the model running 
 and obtain the desired results.
 
